@@ -18,7 +18,7 @@ Route::get('/', 'PageController@index');
 
 Route::resource('products','ProductController');
 Route::get('/admin','AdminController@index');
-Route::post('/add-to-cart','CartController');
+Route::post('/add-to-cart','CartController@show');
 Auth::routes();
 
 
